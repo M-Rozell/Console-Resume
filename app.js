@@ -1,4 +1,4 @@
-let myName="Maggie Rozell"
+let myName = "Maggie Rozell"
 const upper = myName.toUpperCase()
 console.log("Name:", upper);
 console.log('Career: Full Stack Developer / Graphic Designer');
@@ -9,21 +9,37 @@ console.log('  * Furniture Restoration');
 console.log('  * Hiking');
 console.log('  * Biking');
 console.log('My Previous Experience:');
-let gbName='Green Bus Brewing';
-let gbTitle=' Taproom Manager';
-let gbDescription=' Oversaw all operations.';
-DisplayPosition(gbName,gbTitle,gbDescription);
-let ccName='Cork and Crust';
-let ccTitle=' MOD/Bar Manager';
-let ccDescription=' Oversaw all bar and closing operations.';
-DisplayPosition(ccName,ccTitle,ccDescription);
-let ckName='Commerce Kitchen';
-let ckTitle=' Bar Manager';
-let ckDescription=' Oversaw all bar operations and cocktail program.';
-DisplayPosition(ckName,ckTitle,ckDescription);
+
+DisplayPosition('Green Bus Brewing', ' Taproom Manager', ' Oversaw all operations.');
+DisplayPosition('Cork and Crust', ' MOD/Bar Manager', ' Oversaw all bar and closing operations.');
+DisplayPosition('Commerce Kitchen',' Bar Manager', ' Oversaw all bar operations and cocktail program.');
+
+console.log('My Skillz:');
+displaySkill(' Small Engine Repair',true);
+displaySkill(' HTML');
+displaySkill(' CSS');
+displaySkill(' Plumbing',true);
+displaySkill(' Photoshop');
+displaySkill(' Oil Painting',true);
 
 
 
-function DisplayPosition(companyName,jobTitle,description){
+
+function DisplayPosition(companyName, jobTitle, description) {
     console.log(" ", "* " + companyName + " -" + jobTitle + " -" + description);
 };
+
+
+function displaySkill(skillName, cool) {
+   
+    if(cool){
+        console.log(" *", "BAM:" + skillName);
+    }
+    else {
+        console.log(" *" + skillName);
+    }
+};
+
+
+
+
